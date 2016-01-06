@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteCond $1 !(robots.txt|css/|fonts/)
+RewriteRule ^(.*)$ index.html [QSA,L]
